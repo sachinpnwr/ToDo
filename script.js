@@ -57,23 +57,16 @@ $(function () {
         group: "shared",
         animation: 150,
         ghostClass: "ghost",
-        // onEnd: function (evt) {
-        //     // console.log("Item dropped:", evt.item);
-        //     // item[evt].classList.add('item-dragging');
-        //     console.log(evt)
-        // }
     });
 
     Sortable.create(dropZone1, {
         group: "shared",
-        animation: 150,
-        // ghostClass: "ghost"
+        animation: 150
     });
 
     Sortable.create(dropZone2, {
         group: "shared",
-        animation: 150,
-        // ghostClass: "ghost"
+        animation: 150
     });
 });
 
