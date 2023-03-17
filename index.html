@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Internship Assignment</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="https://kit.fontawesome.com/fb1e11dd43.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav>
+    <div class="left">
+        <h1>TODO ASSIGNMENT</h1><hr>
+        <span><i class="fa-solid fa-earth-asia"></i>&nbsp;&nbsp;PUBLIC</span><hr>
+        <span><i class="fa-regular fa-clipboard"></i>&nbsp;&nbsp;BOARD</span>
+        <span><i class="fa-solid fa-chevron-down"></i></span>
+    </div>
+    <div class="right">
+        <hr><span><i class="fa-solid fa-filter"></i>&nbsp;&nbsp;FILTER</span>
+        <hr><img src="img/Screenshot_2023-03-16-22-38-23-71_99c04817c0de5652397fc8b56c3b3817-modified.png" alt="login-img">
+        <hr><span><i class="fa-solid fa-ellipsis"></i></span>
+    </div>
+   </nav>
+      
+    <div class="container-fluid">
+        <div class="todo-box">
+            <div style="text-align: start; font-weight:bolder ; margin: 10px;">To DO</div>
+            <div id="dropzone1" class="container list dropzone">
+                <div class="item" draggable="true">Setup Redux Toolkit</div>
+                <div class="item" draggable="true">Implement Landing Page</div>
+            </div>
+            <!-- <input type="text" class="todo-item" placeholder="Enter a title for this card"> -->
+            <textarea class="todo-item" placeholder="Enter a title for this card"></textarea>
+            <form class="todo-form">
+                <button type="submit"><i class="fa-solid fa-plus"></i> Add a card</button>
+                <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                <!-- <input type="text" class="todo-item" placeholder="Add a card"> -->
+            </form>
+        </div>
+        <div class="doing-box">
+            <div style="text-align: start; font-weight:bolder ; margin: 10px;">Doing</div>
+            <div id="dropzone2" class="container list tasks dropzone">
+                <div class="item" draggable="true">Setup Material UI</div>
+            </div>
+            <textarea class="todo-item" placeholder="Enter a title for this card"></textarea>
+            <form class="todo-form">
+                <button type="submit"><i class="fa-solid fa-plus"></i> Add a card</button>
+                <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            </form>
+        </div>
+        <div class="done-box">
+            <div style="text-align: start; font-weight:bolder ; margin: 10px;">Done</div>
+            <div id="dragzone" class="container list tasks dragzone">
+                <div class="item" draggable="true">Initialize React Project</div>
+                <div class="item" draggable="true">New Task Updated</div>
+            </div>
+            <textarea class="todo-item" placeholder="Enter a title for this card"></textarea>
+            <form class="todo-form">
+                <button type="submit"><i class="fa-solid fa-plus"></i> Add a card</button>
+                <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
