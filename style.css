@@ -5,8 +5,11 @@
 }
 
 body {
-    background-color: #0079bf;
+    /* background-color: #0079bf; */
     font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(180deg, #0079bf,#0000003d);
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 :root {
@@ -15,7 +18,7 @@ body {
 
 /* navbar */
 nav {
-    background-color: #0000003d;
+    /* background-color: #0000003d; */
     display: flex;
     height: 35px;
     width: 100%;
