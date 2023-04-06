@@ -37,7 +37,6 @@ form.forEach((bullet, index) => {
         }
         else if (btn[index].innerHTML === `Save`) {
             todo = inputBox[index].value;
-            console.log(b)
             items[b].innerHTML = `${todo} <i class="fa-solid fa-pen-to-square edit"></i>`;
             input[index].value = '';
             inputBox[index].style.display = `none`
@@ -117,7 +116,6 @@ function editBtn() {
                 boxNum = 2;
             }
             inputBox[boxNum].value = a;
-            // inputBox[0].placeholder = a ;
             inputBox[boxNum].style.display = `block`;
             btn[boxNum].style.background = `#0079bf`;
             btn[boxNum].style.color = `white`;
