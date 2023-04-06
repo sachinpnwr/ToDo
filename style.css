@@ -108,8 +108,15 @@ textarea {
     font-size: 13px;
     line-height: 15px;
     word-wrap: break-word;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    font-family: roboto, sans-serif;
 }
-
+.item i{
+    color: #0079bf;
+    font-size: 12px;
+}
 .item-dragging {
     transform: scale(1.1);
 }
